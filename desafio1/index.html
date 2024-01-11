@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Vue</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="desafio1.js" defer></script>
+</head>
+<body>
+
+    <div id="desafio">
+
+        <input v-model="n1" type="number" placeholder="Digite o primeiro número">
+        <input v-model="n2" type="number" placeholder="Digite o segundo número">
+
+        <input type="button" value="somar" v-on:click="somar">
+
+        <h1>A soma entre {{ n1 }} e {{ n2 }} é: {{ soma }}</h1>
+
+    </div>
+    
+</body>
+</html>
