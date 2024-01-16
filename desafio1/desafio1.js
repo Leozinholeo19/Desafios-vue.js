@@ -7,9 +7,8 @@ const Calcular = {
         }
     },
     methods: {
-        somar(){
-           this.soma = parseFloat(this.n1) + parseFloat(this.n2)
-           console.log(`Valor da soma é: ${this.soma}`);
+        somar(n1, n2){
+            this.soma = Number(n1) + Number(n2)
         }
     }
 }
