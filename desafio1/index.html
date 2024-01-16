@@ -11,10 +11,10 @@
 
     <div id="desafio">
 
-        <input v-model="n1" type="number" placeholder="Digite o primeiro número">
-        <input v-model="n2" type="number" placeholder="Digite o segundo número">
+        <input v-model="n1" type="text" placeholder="Digite o primeiro valor">
+        <input v-model="n2" type="text" placeholder="Digite o segundo valor">
 
-        <input type="button" value="somar" v-on:click="somar">
+        <button @click="somar(n1, n2)">Somar</button>
 
         <h1>A soma entre {{ n1 }} e {{ n2 }} é: {{ soma }}</h1>
 
