@@ -7,7 +7,7 @@ const palindromo = {
     },
     methods: {
         verificarPalindromo() {
-            // Remover espaços e converter para minúsculas para melhor verificação
+         
             const stringSemEspacos = this.inputString.replace(/\s/g, '').toLowerCase();
             const reverteString = stringSemEspacos.split('').reverse().join('');
       
