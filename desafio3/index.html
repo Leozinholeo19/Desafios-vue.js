@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de Palíndromo</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="desafio3.js" defer></script>
+</head>
+<body>
+
+<div id="desafio">
+  <h1>Verificador de Palíndromo</h1>
+  <input v-model="stringEntrada" placeholder="Digite uma string">
+  <button @click="verificarPalindromo()">Verificar</button>
+  <p v-if="resultado !== null">{{ resultado }}</p>
+</div>
+</body>
+</html>
